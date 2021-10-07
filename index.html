@@ -39,11 +39,9 @@
         scene.add(light);
 
 
-        let loader = new THREE.OBJLoader();
-        loader.load('result.obj', function(obj){
-            car = obj.scene.children[0];
-            car.scale.set(1,1,1);
-            scene.add(obj.scene);
+        const objLoader = new OBJLoader();
+            objLoader.load('result.obj', (root) => {
+            scene.add(root);
             animate();
         });
     }
