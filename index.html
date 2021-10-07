@@ -40,7 +40,7 @@
 
 
         let loader = new THREE.OBJLoader();
-        loader.load('results.obj', function(obj){
+        loader.load('result.obj', function(obj){
             car = obj.scene.children[0];
             car.scale.set(1,1,1);
             scene.add(obj.scene);
