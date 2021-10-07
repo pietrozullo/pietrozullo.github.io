@@ -47,19 +47,11 @@
 
 
         const objLoader = new THREE.OBJLoader();
-            objLoader.load('result.obj', function ( object ) {
+            objLoader.load('result.obj', (root) => {
+            scene.add(root);
+            animate();
+        });
 
-                   object.traverse( function ( child ) {
-                             if ( child instanceof THREE.Mesh ) {
-                                  child.material.ambient.setHex(0xFF0000);
-                                  child.material.color.setHex(0x00FF00);
-                                 }
-                             } );
-
-                    object.position.y = 0;
-                    scene.add( object ); 
-                    animate();
-            } );
     }
     function animate() {
         renderer.render(scene,camera);
