@@ -38,16 +38,13 @@
         light2 = new THREE.PointLight(0xc4c4c4,10);
         light2.position.set(500,100,0);
         scene.add(light2);
-        light3 = new THREE.PointLight(0xc4c4c4,10);
-        light3.position.set(0,100,-500);
-        scene.add(light3);
 
 
 
         let loader = new THREE.GLTFLoader();
         loader.load('results.gltf', function(gltf){
             car = gltf.scene.children[0];
-            car.scale.set(1,1,1);
+            car.scale.set(10,10,10);
             scene.add(gltf.scene);
             animate();
         });
