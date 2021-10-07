@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset=UTF-8 />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" integrity="sha512-yNJzAsg5JyP91u+sLHlUDULMBd3hmEiVkYeeN1cQBKaLZ7EyT6oH2u5THNIRM2Fu6VKcZJv+F/QAp1h/qzy9Ow==" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
-    <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<script src="three.min.js"></script>
+<script src="GLTFLoader.js"></script>
+<script src="OrbitControls.js"></script>
 <script>
     let scene, camera, renderer;
     function init() {
@@ -48,7 +48,7 @@
 
 
         let loader = new THREE.GLTFLoader();
-        loader.load('results.gltf', function(gltf){
+        loader.load('scene.gltf', function(gltf){
             car = gltf.scene.children[0];
             car.scale.set(0.5,0.5,0.5);
             scene.add(gltf.scene);
@@ -62,3 +62,4 @@
     init();
 </script>
 </body>
+</html>
