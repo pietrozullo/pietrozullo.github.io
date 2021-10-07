@@ -6,7 +6,7 @@
   </head>
   <body>
     <script src="three.min.js"></script>
-    <script src="OBJLoader.js"></script>
+    <script src="GLTFLoader.js"></script>
     <script src="OrbitControls.js"></script>
     <script>
       let scene, camera, renderer;
@@ -41,9 +41,11 @@
         renderer = new THREE.WebGLRenderer({antialias:true});
         renderer.setSize(window.innerWidth,window.innerHeight);
         document.body.appendChild(renderer.domElement);
-        let loader = new THREE.OBJLoader();
-        loader.load('./result.obj', function(obj){
-          scene.add(obj);
+        let loader = new THREE.GLTFLoader();
+        loader.load('result.gltf', function(gltf){
+          car = gltf.scene.children[0];
+          car.scale.set(0.5,0.5,0.5);
+          scene.add(gltf.scene);
           animate();
         });
       }
