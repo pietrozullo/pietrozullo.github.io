@@ -8,6 +8,8 @@
 <script src="https://rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
 <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script> 
 <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+<script src="https://rawgit.com/mrdoob/three.js/dev/examples/js/loaders/OBJLoader.js"></script>
+    
 <script>
     let scene, camera, renderer;
     function init() {
@@ -37,11 +39,11 @@
         scene.add(light);
 
 
-        let loader = new THREE.GLTFLoader();
-        loader.load('results.gltf', function(gltf){
-            car = gltf.scene.children[0];
+        let loader = new THREE.OBJLoader();
+        loader.load('results.obj', function(obj){
+            car = obj.scene.children[0];
             car.scale.set(1,1,1);
-            scene.add(gltf.scene);
+            scene.add(obj.scene);
             animate();
         });
     }
