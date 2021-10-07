@@ -39,7 +39,7 @@
         scene.add(light);
 
 
-        const objLoader = new OBJLoader();
+        const objLoader = new THREE.OBJLoader();
             objLoader.load('result.obj', (root) => {
             scene.add(root);
             animate();
