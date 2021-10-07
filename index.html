@@ -8,6 +8,7 @@
     <script src="https://rawgit.com/mrdoob/three.js/dev/build/three.min.js"></script>
     <script src="GLTFLoader.js"></script>
     <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+    <script type="application/javascript" src="console-log-html.min.js"></script>
     <script>
       let scene, camera, renderer;
       function init() {
@@ -54,6 +55,9 @@
         requestAnimationFrame(animate);
       }
       init();
+      (function(){ // Your closure
+    var ConsoleLogHTML = require('console-log-html');
+})();
     </script>
   </body>
 </html>
