@@ -29,7 +29,6 @@
         controls = new THREE.OrbitControls(camera,renderer.domElement);
         controls.addEventListener('change', renderer);
         hlight = new THREE.AmbientLight (0xffffff,1);
-        hlight.castShadow = true;
         scene.add(hlight);
         directionalLight = new THREE.DirectionalLight(0xffffff,1);
         directionalLight.position.set(0,1,0);
@@ -37,7 +36,6 @@
         scene.add(directionalLight);
         light = new THREE.PointLight(0xffffff,1);
         light.position.set(0,300,500);
-        light.castShadow = true;
         scene.add(light);
         
 
