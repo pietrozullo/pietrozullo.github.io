@@ -43,9 +43,7 @@
         document.body.appendChild(renderer.domElement);
         let loader = new THREE.OBJLoader();
         loader.load('./result.obj', function(obj){
-          car = obj.scene.children[0];
-          car.scale.set(0.5,0.5,0.5);
-          scene.add(obj.scene);
+          scene.add(obj);
           animate();
         });
       }
