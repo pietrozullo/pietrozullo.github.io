@@ -8,7 +8,7 @@ class uploadHandler(tornado.web.RequestHandler):
             fh = open(f"upload/{f.filename}", "wb")
             fh.write(f.body)
             fh.close()
-        self.write(f"https://github.com/pietrozullo/pietrozullo.github.io/img/{f.filename}")
+        self.write(f"https://github.com/pietrozullo/pietrozullo.github.io/upload/{f.filename}")
     def get(self):
         self.render("index.html")
 
