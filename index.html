@@ -41,7 +41,7 @@
 
 
         let loader = new THREE.GLTFLoader();
-        loader.load('smoothresult.gltf', function(gltf){
+        loader.load('https://raw.githubusercontent.com/pietrozullo/pietrozullo.github.io/main/smoothresult.gltf', function(gltf){
             car = gltf.scene.children[0];
             car.scale.set(1,1,1);
             scene.add(gltf.scene);
