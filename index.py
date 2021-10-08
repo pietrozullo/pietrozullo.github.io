@@ -8,7 +8,7 @@ class uploadHandler(tornado.web.RequestHandler):
             fh = open(f"upload/{f.filename}", "wb")
             fh.write(f.body)
             fh.close()
-        self.write(f"https://github.com/pietrozullo/pietrozullo.github.io/upload/{f.filename}")
+        self.write(f"http://localhost:8888/img/{f.filename}")
     def get(self):
         self.render("index.html")
 
@@ -18,6 +18,6 @@ if (__name__ == "__main__"):
         ("/img/(.*)", tornado.web.StaticFileHandler, {'path': 'upload'})
     ])
 
-    app.listen(8080)
+    app.listen(8888)
     print("Listening on port 8080")
     tornado.ioloop.IOLoop.instance().start()
