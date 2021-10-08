@@ -14,7 +14,7 @@ class uploadImgHandler(tornado.web.RequestHandler):
 
 if (__name__ == "__main__"):
     app = tornado.web.Application([
-        ("/", uploadImgHandler),
+        ("/upload", uploadImgHandler),
         ("/img/(.*)", tornado.web.StaticFileHandler, {'path': 'upload'})
     ])
 
