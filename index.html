@@ -40,9 +40,11 @@
         
 
 
-        const objLoader = new THREE.OBJLoader();
-            objLoader.load('smoothresult.obj', (root) => {
-            scene.add(root);
+        let loader = new THREE.GLTFLoader();
+        loader.load('smoothresult.gltf', function(gltf){
+            car = gltf.scene.children[0];
+            car.scale.set(1,1,1);
+            scene.add(gltf.scene);
             animate();
         });
 
