@@ -1,7 +1,7 @@
 import tornado.web
 import tornado.ioloop
 
-class uploadImgHandler(tornado.web.RequestHandler):
+class uploadHandler(tornado.web.RequestHandler):
     def post(self):
         files = self.request.files["fileImage"]
         for f in files:
@@ -14,7 +14,7 @@ class uploadImgHandler(tornado.web.RequestHandler):
 
 if (__name__ == "__main__"):
     app = tornado.web.Application([
-        ("/upload", uploadImgHandler),
+        ("/", uploadHandler),
         ("/img/(.*)", tornado.web.StaticFileHandler, {'path': 'upload'})
     ])
 
