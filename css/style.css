@@ -85,7 +85,7 @@
 
 #content {
     height: 500px;
-    width: 700px;
+    width: 500px;
     position: absolute;
     left: 12%;
     top: calc(50% - 250px);
