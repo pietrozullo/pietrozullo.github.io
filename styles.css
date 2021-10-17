@@ -140,16 +140,17 @@
 }
 
 /* This styles the aside container */
-#aSide {
+aside {
     height: 600px;
     width: 600px;
     position: absolute;
     top: calc(50% - 250px);
     right: 7%;
+    place-items: center;
 }
 
 /* This styles the 3D object inserted in the aside container */
-#aSide model-viewer {
+aside model-viewer {
     height: 600px;
     width: 600px;
     position: absolute;
