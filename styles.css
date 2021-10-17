@@ -144,8 +144,8 @@
     height: 600px;
     width: 600px;
     position: absolute;
-    top: calc(50% - 250px);
-    right: 7%;
+    top: 0;
+    right: 0;
 }
 
 /* This styles the 3D object inserted in the aside container */
