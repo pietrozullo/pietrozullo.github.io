@@ -324,6 +324,31 @@ function start() {
         e.preventDefault();
     };
 
+    canvas.ontouchstart = function (e) {
+        mouse.button  = e.which;
+        mouse.px      = mouse.x;
+        mouse.py      = mouse.y;
+        var rect      = canvas.getBoundingClientRect();
+        mouse.x       = e.clientX - rect.left,
+        mouse.y       = e.clientY - rect.top,
+        mouse.down    = true;
+        e.preventDefault();
+    };
+
+    canvas.ontouchend = function (e) {
+        mouse.down = false;
+        e.preventDefault();
+    };
+
+    canvas.ontouchmove = function (e) {
+        mouse.px  = mouse.x;
+        mouse.py  = mouse.y;
+        var rect  = canvas.getBoundingClientRect();
+        mouse.x   = e.clientX - rect.left,
+        mouse.y   = e.clientY - rect.top,
+        e.preventDefault();
+    };
+
     canvas.oncontextmenu = function (e) {
         e.preventDefault();
     };
