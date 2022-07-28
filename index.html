@@ -1,21 +1,242 @@
-
-
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 	<head>
-		<title>Home made cloth simulation</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="cloth.css">
-        <script async src="cloth.js"></script>
-
-		<style>
-			body {
-				color: rgba(255, 255, 255, 20);
-			}
-		</style>
+		<title>Pietro Zullo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/wave.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-    <body>
-        <canvas id="c" style="background: url('./logo_black.png'); background-position: 50% 50%; background-size: 80%; background-repeat: no-repeat;"></canvas>>
-        </canvas>
-    </body>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title" style="font-size: 50px;">Pietro Zullo</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="bio.html">Bio</a></li>
+						<li><a href="/pdf/CV.pdf">CV</a></li>
+						<li><a href="https://www.alter-ego.ai/">AlterEgo</a></li>
+						<li><a href="leisure.html">Leisure</a></li>
+						<li><a href="readings.html">Readings</a></li>
+
+					</ul>
+				</nav>
+
+
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<a href="bio.html">
+										<h2>BIO</h2>
+										<div class="content">
+											<p>Who I am.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<a href="/pdf/CV.pdf">
+										<h2>CV</h2>
+										<div class="content">
+											<p>Curriculum Vitae as of 29 July 2022.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<a href="https://www.alter-ego.ai/">
+										<h2>AlterEgo</h2>
+										<div class="content">
+											<p>Official website of AlterEgo. </p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="leisure.html">
+										<h2>Leisure</h2>
+										<div class="content">
+											<p>Pictures, Drawing and Paintings.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<a href="readings.html">
+										<h2>Readings</h2>
+										<div class="content">
+											<p>Readings dump.</p>
+										</div>
+									</a>
+								</article>
+								<!--
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Veroeros</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic07.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Ipsum</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic08.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Dolor</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic09.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Nullam</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic10.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Ultricies</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic11.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Dictum</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic12.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Pretium</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								-->
+							</section>
+						</div>
+					</div>
+			<!--Waves begin-->
+			<!--
+			<div>
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+					<defs>
+						<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+					</defs>
+					<g class="parallax">
+						<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+						<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+						<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+						<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+					</g>
+				</svg>
+			</div>
+		    -->
+			<!--Waves end-->
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<section>
+						<h2>Contact</h2>
+						<form method="post" action="#">
+							<ul class="actions">
+								<li><a href="mailto:pietro.zullo@gmail.com" class="button"><span class="label">Email Me</span></a></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<h2>Follow</h2>
+						<ul class="icons">
+							<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+							<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+				</div>
+			</footer>
+		</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
