@@ -2,7 +2,7 @@
 var background = new Image();
 background.src = "/logo.png";
 
-var physics_accuracy  = 3,
+var physics_accuracy  = 5,
     mouse_influence   = 20,
     mouse_pinning_distance = 10,
     mouse_cut         = 5,
@@ -16,10 +16,10 @@ var physics_accuracy  = 3,
     cloth_width       = spacing_x*clothResolution,
     cloth_height      = spacing_y*clothResolution;
 
-var tear_distance     = 70,
-    tearing           = false, 
+var tear_distance     = 90,
+    tearing           = true, 
     deltaTime         = 0.008,
-    stiffness         = 0.3,
+    stiffness         = 0.2,
     pinning           = false,
     damping           = false;
 
