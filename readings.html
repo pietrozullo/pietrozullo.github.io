@@ -101,7 +101,7 @@
 						//List all .png file names in the page
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http://", "");
-							//$("body").append("<div class='row'> <div class='col-md-3'><img src='" + filename + "' class='img-responsive' style='width:20%;' alt=''/></div></div>");
+							$("body").append("<div class='row'> <div class='col-md-3'><img src='" + filename + "' class='img-responsive' style='width:20%;' alt=''/></div></div>");
 							console.log(filename)
 							$("readings").append("<img src='" + filename + "' class='zoom-img' style='width: 15% ;padding: 30px;'> ");
 						});
